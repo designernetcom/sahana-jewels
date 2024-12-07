@@ -1783,7 +1783,7 @@ p {
 }
 
 .pp-overlay-card .category-title {
-  background-color: #2a282859;
+  background-color: #2a282880;
   /* padding: 0 30px; */
   display: inline-block;
   bottom: 0px;
@@ -7312,6 +7312,8 @@ width: 50%;
 }
 
 
+ 
+
 
 @media (max-width: 767.98px) {
   .sticks-icon a i.fa-whatsapp {
@@ -7327,10 +7329,59 @@ width: 50%;
   }
 
 }
+
+.mobp {
+  display: none;
+}
+.deskp {
+  display: block;
+}
+@media (max-width: 991px) {
+  .mobp {
+    display: block;
+  }
+  .deskp {
+    display: none;
+  }
+  .ur3-featured-product .overlay-content {
+    width: calc(100% - 60px);
+    height: calc(100% - 100px);
+    top: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .ur3-featured-product .overlay-content {
+    width: calc(100% - 60px);
+    height: calc(100% - 250px);
+    top: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .ur3-featured-product .overlay-content {
+    width: calc(100% - 60px);
+    height: calc(100% - 200px);
+    top: 75%;
+  }
+}
+@media (max-width: 500px) {
+
+  .ur3-featured-product .overlay-content {
+    width: calc(100% - 60px);
+    height: calc(100% - 130px);
+    top: 65%;
+  }
+}
 @media (max-width: 400px) {
   .overlay-content p { 
     display: none;
   
+  }
+  .mobp {
+    display: none;
   }
   .ur3-featured-product .overlay-content {
     height: 50px;
